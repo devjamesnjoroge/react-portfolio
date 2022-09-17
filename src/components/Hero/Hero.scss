@@ -1,0 +1,36 @@
+.hero{
+    padding: 5vh 5vw;
+}
+
+h1{
+    color: #cac2c2;
+    font-size: 40px;
+}
+
+p{
+    margin-top: 5vh;
+    color: #f1f1f1;
+}
+
+.btn{
+    border: 2px solid rgba(255, 166, 0, 0.81);
+    outline: none !important;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 10px 5vw;
+    margin-top: 10vh;
+    color: rgba(255, 166, 0, 0.81);
+    background-color: inherit;
+}
+
+@media screen and (min-width: 900px) {
+
+    h1{
+        max-width: 45vw;
+    }
+    
+    p{
+        max-width: 45vw;
+    }
+    
+}

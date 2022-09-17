@@ -4,7 +4,7 @@ import './Header.scss'
 function Header() {
   return (
     <div className="nav">
-        <h1>DEVJAYMMY</h1>
+        <h1 className='logo'>NG'ANG'A</h1>
     </div>
   )
 }
