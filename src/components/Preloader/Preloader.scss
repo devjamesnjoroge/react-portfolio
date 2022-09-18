@@ -11,4 +11,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    animation: Loader 4s;
+    clip-path: polygon(20% 0, 60% 50%, 100% 100%,  60% 50%);
+}
+
+@keyframes Loader {
+
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transition: all ease-out;
+    }
+    
+    to{
+        clip-path: polygon(20% 0, 60% 50%, 100% 100%,  60% 50%);
+    }
 }
