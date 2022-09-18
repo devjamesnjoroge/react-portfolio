@@ -13,6 +13,7 @@
     flex-direction: column;
     overflow: hidden;
     scroll-behavior: smooth;
+    animation-delay: 10s;
     animation: Loader 4s;
     clip-path: polygon(0 100%, 100% 100%, 100% 100%,  0% 100%);
 }
@@ -20,16 +21,20 @@
 #preparagraph{
     color: #f1f1f1;
     margin-top: .5rem;
+    transition: all 0.3s ease-in;
 }
 
 @keyframes Loader {
 
-    from {
+    0% {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        transition: all ease-out;
+    }
+
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     
-    to{
+    100%{
         clip-path: polygon(0 100%, 100% 100%, 100% 100%,  0% 100%);
     }
 }
