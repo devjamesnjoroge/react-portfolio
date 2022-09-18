@@ -1,5 +1,9 @@
+$primary_color: rgba(255, 166, 0, 0.81);
+
 .hero{
-    padding: 5vh 5vw;
+    height: 100vh;
+    width: 100%;
+    padding-top: 5vh;
 }
 
 h1{
@@ -13,17 +17,21 @@ p{
 }
 
 .btn{
-    border: 2px solid rgba(255, 166, 0, 0.81);
+    border: 2px solid $primary_color;
     outline: none !important;
-    border-radius: 2px;
+    border-radius: 5px;
     cursor: pointer;
-    padding: 10px 5vw;
+    padding: 10px 1.5rem;
     margin-top: 10vh;
-    color: rgba(255, 166, 0, 0.81);
+    color: $primary_color;
     background-color: inherit;
 }
 
 @media screen and (min-width: 900px) {
+
+    .hero{
+        padding-top: 15vh;
+    }
 
     h1{
         max-width: 45vw;

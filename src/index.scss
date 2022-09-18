@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald:wght@300;400;500;600;700&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
 }
 
+$primary_color: rgba(255, 166, 0, 0.81);
+
+$dark_color: #000014;
+
 body{
-    background: rgb(1, 6, 29);
+    background-color: $dark_color;
+    padding: 5vh 5vw;
+}
+
+.primary{
+    color: $primary_color;
+    font-size: large;
+    text-transform: uppercase;
 }

@@ -1,7 +1,8 @@
-.nav{
-    padding: 7vh 5vw;
-}
+$primary_color: rgba(255, 166, 0, 0.81);
+
+
 
 .logo{
-    color: rgba(255, 166, 0, 0.81);
+    color: $primary_color;
+
 }
