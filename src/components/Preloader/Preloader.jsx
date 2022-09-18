@@ -13,7 +13,7 @@ function Preloader() {
     <path d="M155 2H131.923L155 54.9412V2Z" stroke="#FFA500" stroke-width="3.95833"/>
     </svg>
 
-    <p>James Ng'ang'a Architecture.</p>
+    <p id='preparagraph'>James Ng'ang'a Architecture.</p>
     </div>
     </>
   )
