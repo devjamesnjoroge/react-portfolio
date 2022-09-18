@@ -7,6 +7,37 @@
     justify-content: center;
     background-color: #ff6ad5;
     color: #000000;
-    margin-top: 5vh;
     border-radius: 50%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5vh;
+    flex-direction: column;
+}
+
+.card{
+    border: 1px solid #ff6ad5;
+    border-radius: 5px;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle{
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6ad5;
+    color: #000000;
+    border-radius: 50%;
+    top: -18px;
+    left: -18px;
+    position: absolute;
 }

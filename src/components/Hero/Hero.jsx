@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="hero">
         <h1>Welcome to my hood!</h1>
-        <p>I am James Ng'ang'a, a full-stack developer based in Nairobi, Kenya. I build websites using reusable pieces of code that are fast and upto date with current best practices.</p>
+        <p className='contentParagraph'>I am James Ng'ang'a, a full-stack developer based in Nairobi, Kenya. I build websites using reusable pieces of code that are fast and upto date with current best practices.</p>
         <button className="btn">My Work</button>
     </section>
   )
