@@ -19,13 +19,15 @@
 }
 
 .card{
-    border: 1px solid #ff6ad5;
-    border-radius: 5px;
+    border: none;
+    border-radius: 10px;
     padding: 0.8rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: #ffffff;
+    color: black;
 }
 
 .circle{

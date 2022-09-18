@@ -1,5 +1,7 @@
 import React from 'react'
 import './Feedback.scss'
+import FeedbackItem from '../FeedbackItem/FeedbackItem';
+
 
 function Feedback({feedbackList}) {
 
@@ -7,22 +9,17 @@ function Feedback({feedbackList}) {
     <>
 
     <h2 className='primary'>Feedback app</h2>
-    <div className="container">
         
         {feedbackList.map((item)=>{
         console.log(item)
         return(   <>
                 key={item.id}
-                <div className="card" key={item.id}>
-                <div className="circle">{item.rating}</div>
-                <p>{item.text}</p>
-                </div>
+                <FeedbackItem rating={item.rating} text={item.text} />
             </>
             )
         })}
         
        
-    </div>
     <button className='btn'>Update Rating</button>
 
     </>
