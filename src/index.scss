@@ -22,3 +22,74 @@ body{
     font-size: large;
     text-transform: uppercase;
 }
+
+
+.circle{
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6ad5;
+    color: #000000;
+    border-radius: 50%;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 5vh;
+    flex-direction: column;
+}
+
+.card{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(9, 0, 90, 0.733);
+    color: #f1f1f1;
+}
+
+.circle{
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    color: #000000;
+    border-radius: 50%;
+    top: -18px;
+    left: -18px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.close{
+    position: absolute;
+    background: transparent;
+    border: none;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.delete{
+    position: absolute;
+    background: transparent;
+    border: none;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.feedParagraph{
+    color: #f1f1f1;
+    padding: 1rem 2rem;
+}
+

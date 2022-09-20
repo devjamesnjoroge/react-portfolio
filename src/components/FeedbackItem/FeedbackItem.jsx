@@ -1,18 +1,32 @@
 import Card from "../Shared/Card"
-import PropTypes from 'prop-types'
 
-function FeedbackItem({rating, text}) {
+import FeedbackData from "../../Data/FeedbackData"
+import { useState } from "react"
+
+import FeedbackContent from "../FeedbackContent/FeedbackContent"
+
+function FeedbackItem({items, handleDelete}) {
+
+  if (!items || items.length === 0){
+    return <p className="feedParagraph">No feedback items yet!</p>
+  }
+
+
   return (
-    <Card>
-        <div className="circle">{rating}</div>
-        <p>{text}</p>
-    </Card>
+    <>
+        {items.map((item)=>{
+          return (
+            <Card key={item.id}>
+              <FeedbackContent
+               feed={item} 
+               handleDelete={handleDelete}
+               />
+          </ Card>
+          )
+        })}
+    </>
   )
 }
 
-FeedbackItem.propTypes = {
-    rating: PropTypes.number,
-    text: PropTypes.string
-}
 
 export default FeedbackItem
