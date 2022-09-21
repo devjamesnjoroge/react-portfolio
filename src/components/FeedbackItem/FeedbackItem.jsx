@@ -5,6 +5,7 @@ import { useState } from "react"
 
 import FeedbackContent from "../FeedbackContent/FeedbackContent"
 
+
 function FeedbackItem({items, handleDelete}) {
 
   if (!items || items.length === 0){
@@ -14,6 +15,7 @@ function FeedbackItem({items, handleDelete}) {
 
   return (
     <>
+      
         {items.map((item)=>{
           return (
             <Card key={item.id}>

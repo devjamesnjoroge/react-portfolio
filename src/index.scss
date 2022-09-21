@@ -43,6 +43,7 @@ body{
     flex-direction: column;
 }
 
+
 .card{
     border: none;
     border-radius: 10px;
@@ -93,3 +94,52 @@ body{
     padding: 1rem 2rem;
 }
 
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label{
+    color: #f1f1f1;
+    margin: 2rem 0;
+}
+
+.form-grp{
+    position: relative;
+}
+
+.btn2{
+    position: absolute;
+    right: 1rem;
+    top: -.6rem;
+    background-color: #ff6ad5;
+    color: #f1f1f1;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: .8rem;
+}
+
+li{
+    position: relative;
+    grid-column: auto;
+}
+
+.label{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color:rgba(9, 0, 90, 0.733);
+    font-weight: 700;
+}
+
+input[type='radio']{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    accent-color: #ff6ad5;
+}

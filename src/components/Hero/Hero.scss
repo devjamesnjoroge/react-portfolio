@@ -17,14 +17,12 @@ h1{
 }
 
 .btn{
-    border: 2px solid $primary_color;
+    border: none;
     outline: none !important;
     border-radius: 5px;
     cursor: pointer;
     padding: 10px 1.5rem;
     margin-top: 10vh;
-    color: $primary_color;
-    background-color: inherit;
 }
 
 @media screen and (min-width: 900px) {
@@ -40,5 +38,23 @@ h1{
     p{
         max-width: 45vw;
     }
+
+    input, textarea{
+        border-radius: 15px;
+        outline: none !important;
+        border: 1px solid #ff6ad5;
+        margin: 2rem 0;
+        padding: 1.5rem 5rem 1.5rem .3rem;
+        width: 25rem;
+    }
     
+}
+
+input, textarea{
+    border-radius: 15px;
+    outline: none !important;
+    border: 1px solid #ff6ad5;
+    margin: 2rem 0;
+    padding: 1.5rem 5rem 1.5rem .3rem;
+    width: 25rem;
 }
