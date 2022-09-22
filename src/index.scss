@@ -12,7 +12,7 @@
 
 $primary-color: #f1f1f1;
 $secondary-color: rgb(196, 127, 0);
-$dark-color: #000024;
+$dark-color: #00001b;
 $warning-color: red;
 
 /* Font sizes and weight */
@@ -57,8 +57,8 @@ body{
 .card{
     background-color: $primary-color;
     color: $dark-color;
-    padding: 3rem 1.5rem;
-    border-radius: 5px;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
