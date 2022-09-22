@@ -8,138 +8,38 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-$primary_color: rgba(255, 166, 0, 0.81);
+/* Theme Colors */
 
-$dark_color: #000014;
+$primary-color: #f1f1f1;
+$secondary-color: #ff6ad5;
+$dark-color: #000024;
+$warning-color: red;
+
+/* Font sizes and weight */
+
+$large-font: 36px;
+$medium-font: 24px;
+$bold: 700;
+
+/* General styling */
 
 body{
-    background-color: $dark_color;
-    padding: 5vh 5vw;
+    background-color: $dark-color;
+    color: $primary-color;
 }
 
-.primary{
-    color: $primary_color;
-    font-size: large;
-    text-transform: uppercase;
-}
+/* Navbar Styling */
 
-
-.circle{
-    height: 36px;
-    width: 36px;
+.nav{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #ff6ad5;
-    color: #000000;
-    border-radius: 50%;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
 }
 
-.container{
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-top: 5vh;
-    flex-direction: column;
+.nav h2{
+    color: $secondary-color;
 }
 
 
-.card{
-    border: none;
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-color: rgba(9, 0, 90, 0.733);
-    color: #f1f1f1;
-}
-
-.circle{
-    height: 36px;
-    width: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-    color: #000000;
-    border-radius: 50%;
-    top: -18px;
-    left: -18px;
-    position: absolute;
-    font-weight: 600;
-}
-
-.close{
-    position: absolute;
-    background: transparent;
-    border: none;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
-}
-
-.delete{
-    position: absolute;
-    background: transparent;
-    border: none;
-    right: 10px;
-    bottom: 10px;
-    cursor: pointer;
-}
-
-.feedParagraph{
-    color: #f1f1f1;
-    padding: 1rem 2rem;
-}
-
-.stats{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-label{
-    color: #f1f1f1;
-    margin: 2rem 0;
-}
-
-.form-grp{
-    position: relative;
-}
-
-.btn2{
-    position: absolute;
-    right: 1rem;
-    top: -.6rem;
-    background-color: #ff6ad5;
-    color: #f1f1f1;
-}
-
-ul{
-    list-style: none;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: .8rem;
-}
-
-li{
-    position: relative;
-    grid-column: auto;
-}
-
-.label{
-    position: absolute;
-    left: 15px;
-    top: 10px;
-    color:rgba(9, 0, 90, 0.733);
-    font-weight: 700;
-}
-
-input[type='radio']{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    accent-color: #ff6ad5;
-}
