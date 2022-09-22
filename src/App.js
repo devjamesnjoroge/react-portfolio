@@ -1,8 +1,14 @@
+import FeedbackList from "./Components/FeedbackList"
 import Navbar from "./Components/Navbar"
 
 function App() {
   return (
-    <Navbar />
+    <>
+        <div className="container">
+            <Navbar />
+            <FeedbackList />
+        </div>
+    </>
   )
 }
 
