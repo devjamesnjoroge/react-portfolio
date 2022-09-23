@@ -9,7 +9,7 @@ function App() {
     <>
         <div className="container">
             <Navbar />
-            <FeedbackList />
+            <FeedbackList feedback={FeedbackData} />
         </div>
     </>
   )

@@ -1,13 +1,23 @@
 import React from 'react'
-import Card from '../shared/Card'
 import FeedbackItems from './FeedbackItems'
+import PropTypes from 'prop-types'
 
-function FeedbackList() {
+function FeedbackList({feedback}) {
   return (
-    <div className='mt-5'>
-        <FeedbackItems />
-    </div>
+   feedback.map((item) => {
+      return  (
+      <div key={item.id}>
+        <div className='mt-5'>
+                <FeedbackItems item={item} />
+        </div>
+      </div>
+      )
+  })
   )
+}
+
+FeedbackList.propTypes = {
+  feedback: PropTypes.array
 }
 
 export default FeedbackList
