@@ -42,6 +42,13 @@ function FeedbackForm({handleAdd}) {
             handleAdd(newFeedback)
 
             setReview('')
+
+            setMessage('')
+
+            setDisabled(true)
+            
+        } else{
+            setMessage('Review must be more than 10 characters!')
         }
     }
 
