@@ -2,13 +2,13 @@ import React from 'react'
 import FeedbackItems from './FeedbackItems'
 import PropTypes from 'prop-types'
 
-function FeedbackList({feedback}) {
+function FeedbackList({feedback, handleDelete}) {
   return (
    feedback.map((item) => {
       return  (
       <div key={item.id}>
         <div className='mt-5'>
-                <FeedbackItems item={item} />
+                <FeedbackItems item={item} handleDelete={handleDelete} />
         </div>
       </div>
       )
@@ -17,7 +17,8 @@ function FeedbackList({feedback}) {
 }
 
 FeedbackList.propTypes = {
-  feedback: PropTypes.array
+  feedback: PropTypes.array,
+  handleDelete: PropTypes.func,
 }
 
 export default FeedbackList

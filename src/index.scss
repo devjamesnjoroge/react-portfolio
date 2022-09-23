@@ -64,6 +64,14 @@ body{
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+    position: relative;
+}
+
+.delete{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    cursor: pointer;
 }
 
 .circle{
