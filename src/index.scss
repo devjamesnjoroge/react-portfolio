@@ -97,11 +97,24 @@ body{
 
 /* Form styling */
 
+form{
+    position: relative;
+}
+
 .review-input{
     margin-top: 3rem;
     width: 100%;
     padding: 1rem .5rem;
-    height: 50%;
+    height: 70%;
+}
+
+.btn{
+    margin-top: 3rem;
+    width: 30%;
+    padding: .7rem .5rem;
+    position: absolute;
+    right: .5rem;
+    top: 32%;
 }
 
 /* Large media screens */
@@ -124,6 +137,12 @@ body{
         border-radius: 10px;
         box-shadow: 1px 2px #000024;
         gap: 2rem;
+    }
+
+    /* Form */
+    
+    .btn{
+        top: 32%;
     }
     
 }
