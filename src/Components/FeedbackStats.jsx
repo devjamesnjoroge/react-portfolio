@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import PropTypes from 'prop-types'
 
 function FeedbackStats({feedback}) {
@@ -12,7 +11,7 @@ average = average.toFixed(1).replace(/[.,]0$/, '')
   return (
     <div className="stats">
         <span>Total Reviews: {feedback.length}</span>
-        <span>Total Reviews: { isNaN(average) ? 0 : average}</span>
+        <span>Average Rating: { isNaN(average) ? 0 : average}</span>
     </div>
   )
 }

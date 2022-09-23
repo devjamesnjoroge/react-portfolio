@@ -135,6 +135,12 @@ form{
     outline: none !important;
 }
 
+.btn:disabled{
+
+    opacity: 0.4;
+
+}
+
 .radio-btns{
     display: flex;
     grid-template-rows: auto auto;

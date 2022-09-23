@@ -1,16 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Button({children}) {
+function Button({children, disabled}) {
+    const handleSubmit = () => {
+        alert('g')
+    }
+
   return (
-    <button className="btn" type='button'>
+    <button className="btn" type='button' disabled={disabled} onClick={handleSubmit}>
         {children}
     </button>
   )
 }
 
+Button.defaultProps = {
+    disabled: true,
+}
+
 Button.propTypes = {
-    children: PropTypes.node
+    children: PropTypes.node,
+    disabled: PropTypes.bool,
 }
 
 export default Button
