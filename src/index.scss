@@ -173,6 +173,14 @@ input[type='radio']:checked{
     border: none;
 }
 
+/* Stats */
+
+.stats{
+    padding: 4rem 2rem;
+    display: flex;
+    gap: 10%;
+}
+
 /* Large media screens */
 
 @media screen and (min-width: 992px) {

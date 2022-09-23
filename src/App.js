@@ -3,6 +3,7 @@ import FeedbackList from "./Components/FeedbackList"
 import Navbar from "./Components/Navbar"
 import FeedbackData from "./data/FeedbackData"
 import {useState} from 'react'
+import FeedbackStats from "./Components/FeedbackStats"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <div className="container">
             <Navbar />
             <FeedbackForm />
+            <FeedbackStats feedback={feedback} />
             <FeedbackList feedback={feedback} handleDelete={handleDelete} />
         </div>
     </>
