@@ -2,10 +2,7 @@ import React, { useState } from 'react'
 import Button from '../shared/Button'
 import Card from '../shared/Card'
 
-function FeedbackForm() {
-    const handleSubmit = (e) =>{
-        e.preventDefault()
-    }
+function FeedbackForm({handleAdd}) {
 
     const [rating, setRating] = useState(10)
 
@@ -32,6 +29,19 @@ function FeedbackForm() {
         } else {
             setDisabled(true)
             setMessage('')
+        }
+    }
+
+    const handleSubmit = () => {
+        if (review.trim().length > 10){
+            let newFeedback = {
+                rating,
+                review
+            }
+
+            handleAdd(newFeedback)
+
+            setReview('')
         }
     }
 
@@ -86,7 +96,7 @@ function FeedbackForm() {
                 </li>
             </ul>
             <textarea placeholder='Write your review.' onChange={handleReviewChange} className='review-input' type="text" name="review" id="review"></textarea>
-            <Button onClick={handleSubmit} disabled={disabled}>
+            <Button disabled={disabled} handleSubmit={handleSubmit}>
                 Send 
             </Button>
         </form>
