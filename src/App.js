@@ -1,3 +1,4 @@
+import FeedbackForm from "./Components/FeedbackForm"
 import FeedbackList from "./Components/FeedbackList"
 import Navbar from "./Components/Navbar"
 import FeedbackData from "./data/FeedbackData"
@@ -9,6 +10,7 @@ function App() {
     <>
         <div className="container">
             <Navbar />
+            <FeedbackForm />
             <FeedbackList feedback={FeedbackData} />
         </div>
     </>

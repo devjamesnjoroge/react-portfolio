@@ -95,6 +95,15 @@ body{
     content: '';
 }
 
+/* Form styling */
+
+.review-input{
+    margin-top: 3rem;
+    width: 100%;
+    padding: 1rem .5rem;
+    height: 50%;
+}
+
 /* Large media screens */
 
 @media screen and (min-width: 992px) {
