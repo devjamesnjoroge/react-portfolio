@@ -95,7 +95,7 @@ function FeedbackForm({handleAdd}) {
                     <input onChange={handleRatingChange} value={10} checked={rating === 10 ? true : false} type="radio" name="rating" id="num10" />
                 </li>
             </ul>
-            <textarea placeholder='Write your review.' onChange={handleReviewChange} className='review-input' type="text" name="review" id="review"></textarea>
+            <textarea value={review} placeholder='Write your review.' onChange={handleReviewChange} className='review-input' type="text" name="review" id="review"></textarea>
             <Button disabled={disabled} handleSubmit={handleSubmit}>
                 Send 
             </Button>

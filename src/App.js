@@ -13,6 +13,7 @@ function App() {
   const addFeedback = (newFeedback) => {
     newFeedback.id = uuidv4()
     setFeedback([newFeedback, ...feedback])
+    alert('Feedback added!')
   }
 
   const handleDelete = (id) => {
