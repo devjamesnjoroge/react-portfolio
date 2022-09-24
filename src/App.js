@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar"
 import FeedbackData from "./data/FeedbackData"
 import {useState} from 'react'
 import FeedbackStats from "./Components/FeedbackStats"
+import { FeedbackProvider } from './context/FeedbackContext'
 
 function App() {
 
@@ -23,14 +24,14 @@ function App() {
   }
 
   return (
-    <>
+    <FeedbackProvider>
         <div className="container">
             <Navbar />
             <FeedbackForm handleAdd={addFeedback} />
             <FeedbackStats feedback={feedback} />
             <FeedbackList feedback={feedback} handleDelete={handleDelete} />
         </div>
-    </>
+    </FeedbackProvider>
   )
 }
 
