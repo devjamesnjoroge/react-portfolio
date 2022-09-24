@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import {useContext} from 'react'
 import FeedbackContext from '../context/FeedbackContext'
 
@@ -18,10 +17,6 @@ average = average.toFixed(1).replace(/[.,]0$/, '')
         <span>Average Rating: { isNaN(average) ? 0 : average}</span>
     </div>
   )
-}
-
-FeedbackStats.propTypes = {
-    feedback: PropTypes.array.isRequired
 }
 
 export default FeedbackStats

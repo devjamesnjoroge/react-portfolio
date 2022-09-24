@@ -75,6 +75,13 @@ body{
     cursor: pointer;
 }
 
+.edit{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
 .circle{
     border-radius: 50%;
     border: 1px solid $secondary-color;
