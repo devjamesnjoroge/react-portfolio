@@ -15,12 +15,13 @@ function FeedbackItems({item}) {
     }
 
     const handleEdit = () => {
+        document.querySelector('form').scrollIntoView()
         editFeedback(item)
     }
 
   return (
     <>
-        <Card>
+        <Card id={item.id}>
             <span style={{fontWeight: 500}}>Rating.</span>
             <div className="circle">{item.rating}</div>
             <p>{item.review}</p>

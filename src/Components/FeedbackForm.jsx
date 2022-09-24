@@ -54,6 +54,8 @@ function FeedbackForm() {
 
                 updateFeedback(feedbackEdit.item.id, newFeedback)
 
+                document.getElementById(''+feedbackEdit.item.id).scrollIntoView()
+
                 resetFeedbackEdit()
 
             } else{

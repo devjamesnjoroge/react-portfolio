@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Card({children}) {
+function Card({children, id}) {
   return (
-    <div className="card">
+    <div className="card" id={id} >
         {children}
     </div>
   )
