@@ -1,12 +1,17 @@
-import React from 'react'
+import {useContext} from 'react'
 import Card from '../shared/Card'
 import PropTypes from 'prop-types'
 import {FaTrash} from 'react-icons/fa'
+import FeedbackContext from '../context/FeedbackContext'
 
-function FeedbackItems({item, handleDelete}) {
+function FeedbackItems({item}) {
+
+    const {handleDelete} = useContext(FeedbackContext) 
+
     const handleClick = () =>{
         handleDelete(item.id)
     }
+
   return (
     <>
         <Card>
@@ -21,7 +26,6 @@ function FeedbackItems({item, handleDelete}) {
 
 FeedbackItems.propTypes = {
     item: PropTypes.object,
-    handleDelete: PropTypes.func,
 }
 
 export default FeedbackItems
