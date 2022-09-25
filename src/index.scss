@@ -195,6 +195,29 @@ input[type='radio']:checked{
     gap: 10%;
 }
 
+/* Preloader */
+
+.preloader{
+    height: 100% !important;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    background-color: #000014;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
 /* Large media screens */
 
 @media screen and (min-width: 992px) {

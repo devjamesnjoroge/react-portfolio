@@ -1,14 +1,15 @@
 import {useContext} from 'react'
 import FeedbackItems from './FeedbackItems'
 import FeedbackContext from '../context/FeedbackContext'
+import Preloader from './Preloader'
 
 function FeedbackList() {
 
-  const {feedback} = useContext(FeedbackContext)
+  const {feedback, isLoading} = useContext(FeedbackContext)
 
   return (
    feedback.map((item) => {
-      return  (
+      return isLoading ? <Preloader /> :  (
       <div key={item.id}>
         <div className='mt-5'>
                 <FeedbackItems item={item} />
